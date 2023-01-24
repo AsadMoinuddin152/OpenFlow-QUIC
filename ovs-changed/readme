@@ -1,0 +1,2 @@
+add "-ldl" into LIBS in Makefile
+"LIBS = -ldl"

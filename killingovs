@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo Killing OVS for $1
+ovs-vsctl --db=unix:/tmp/mininet-$1/db.sock del-br $1
+kill `cd /tmp/mininet-$1/ && cat ovsdb-server.pid ovs-vswitchd.pid`

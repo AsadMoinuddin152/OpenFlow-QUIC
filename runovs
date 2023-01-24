@@ -1,0 +1,31 @@
+#!/bin/bash
+./killingovs $0
+
+./startOvsDb $0
+ovs-vsctl --db=unix:/tmp/mininet-$0/db.sock del-br $0
+./StartOvs $0
+
+echo Configure OVS for $0
+
+
+
+ovs-vsctl --db=unix:/tmp/mininet-$0/db.sock add-br $0
+
+# ovs-vsctl --db=unix:/tmp/mininet-$0/db.sock add-port $0 $0-eth0
+# ovs-vsctl --db=unix:/tmp/mininet-$0/db.sock add-port $0 $0-eth1
+# ovs-vsctl --db=unix:/tmp/mininet-$0/db.sock add-port $0 $0-eth2
+# 10.0.0.100/8
+ifconfig $0 inet $1
+
+ovs-vsctl --db=unix:/tmp/mininet-$0/db.sock set-fail-mode $0 secure
+# if you want to debug ovs, do this:
+# gdb $(which ovs-vswitchd) $(pidof ovs-vswitchd)
+
+# this "tcp" should be changed in OVS. 
+# "/ovs-master/lib/stream-provider.h" -> extern "quic"
+# the "quic" class implement by yourself.
+# you can follow the "tcp" class to fork the "quic" class is ok.
+# note that you needs to change "/ovs-master/lib/stream-fd.c" -> check the connection function. 
+# It needs to check the unix domain socket is connected.
+ovs-vsctl --db=unix:/tmp/mininet-$0/db.sock set-controller $0 tcp:$2
+ovs-vsctl --db=unix:/tmp/mininet-$0/db.sock show
