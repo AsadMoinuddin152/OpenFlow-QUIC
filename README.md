@@ -62,4 +62,4 @@ Welcome someone who finds this code useful in your research.
 The paper is still under submission.
 
 Copyright (c) 2022 AntLab
-Licensed under the MIT License.
+Licensed under the GPL-3.0 license.
