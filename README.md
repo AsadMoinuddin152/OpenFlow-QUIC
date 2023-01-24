@@ -44,7 +44,7 @@ This project provides improved performance for networks using OpenFlow through t
 ## Development
 - ```Algorithm.go``` contains the algorithm of EPM
 - ```export_to_server.go``` is for CGO compiling a dynamic library, providing the initiation function.
-- ```OFHandlerOperatorReceiver.go``` and ```OFHandlerOperatorSender.go``` are responsible for each OpenFlow message executing some strategies.
+- ```OFHandlerOperatorReceiver.go``` and ```OFHandlerOperatorSender.go``` are responsible for each OpenFlow message following serveral rules to further improve the performance of OpenFlow-QUIC by EPM.
 - **some codes are ready for supporting [multicast QUIC (Multicast Extension for QUIC draft-jholland-quic-multicast-02)](https://datatracker.ietf.org/doc/draft-jholland-quic-multicast/)**
 
 - for client
