@@ -1,5 +1,6 @@
 # OpenFlow-QUIC with EPM
-OpenFlow-QUIC with Extend Performance Modular
+
+OpenFlow-QUIC uses QUIC as the transport protocol for OpenFlow. We also design an Extended Performance Modular (EPM) scheduling algorithm to optimize the performance of OpenFlow.
 
 ## Overview of OpenFlow-QUIC with EPM in Go
 **OpenFlow-QUIC with EPM** is an extend performance modular implementation of the OpenFlow protocol in Go, serving [Open vSwitch](https://www.openvswitch.org/) and [RYU controller](https://github.com/faucetsdn/ryu) by [quic-go](https://github.com/lucas-clemente/quic-go) v0.22.0 . 
