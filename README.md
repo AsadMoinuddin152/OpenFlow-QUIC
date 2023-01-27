@@ -13,13 +13,6 @@ This project provides improved performance for networks using OpenFlow through t
 If you find this code useful in your research, please cite the following papers:
 
 * WaiMin Lau, KaKei Wong, Lin Cui, "Optimizing the Performance of OpenFlow Protocol over QUIC", 2023 (Under submission).
-```bibtex
-@article{Qian2022_dDrops,
-  title={dDrops: Detecting Silent Packet Drops on Programmable Data Plane},
-  author={Mimi Qian, Lin Cui, Xiaoquan Zhang, Fung Po Tso and Yuhui Deng},
-  year={2023}
-}
-```
 
 ## INSTALLATION
 *Be Careful, this implementation based on quic-go v0.22.0. Some interfaces have been changed in the new quic-go version. You should change the codes in folder "quic-go" and implement them again by yourself.*
