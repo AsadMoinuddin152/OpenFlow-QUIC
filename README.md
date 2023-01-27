@@ -12,7 +12,7 @@ This project provides improved performance for networks using OpenFlow through t
 
 If you find this code useful in your research, please cite the following papers:
 
-* WaiMin Lau, KaKei Wong, Lin Cui, "Optimizing the Performance of OpenFlow Protocol over QUIC", 2023 (Under submission).
+* WaiMin Lau, KaKei Wong, Lin Cui, "Optimizing the Performance of OpenFlow Protocol over QUIC", 2023 (Under submission).*
 
 ## INSTALLATION
 *Be Careful, this implementation based on quic-go v0.22.0. Some interfaces have been changed in the new quic-go version. You should change the codes in folder "quic-go" and implement them again by yourself.*
@@ -64,8 +64,6 @@ If you find this code useful in your research, please cite the following papers:
 
 
 ## License
-Welcome someone who finds this code useful in your research.
-The paper is still under submission.
 
 Copyright (c) 2022 AntLab
 Licensed under the GPL-3.0 license.
