@@ -17,11 +17,7 @@ If you find this code useful in your research, please cite the following papers:
 @article{Qian2022_dDrops,
   title={dDrops: Detecting Silent Packet Drops on Programmable Data Plane},
   author={Mimi Qian, Lin Cui, Xiaoquan Zhang, Fung Po Tso and Yuhui Deng},
-  journal={Computer Networks},
-  volume={214},
-  pages={109171},
-  year={2022},
-  publisher={Elsevier}
+  year={2023}
 }
 ```
 
