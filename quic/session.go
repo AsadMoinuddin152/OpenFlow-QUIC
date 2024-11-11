@@ -12,11 +12,10 @@ import (
 	"sync"
 	"sync/atomic"
 	"time"
-
+	"log"
 	"github.com/quic-go/quic-go/internal/ackhandler"
 	"github.com/quic-go/quic-go/internal/flowcontrol"
 	"github.com/quic-go/quic-go/internal/handshake"
-	"github.com/quic-go/quic-go/internal/logutils"
 	"github.com/quic-go/quic-go/internal/protocol"
 	"github.com/quic-go/quic-go/internal/qerr"
 	"github.com/quic-go/quic-go/internal/utils"
@@ -1199,7 +1198,7 @@ func (s *session) handleUnpackedPacket(
 	if s.tracer != nil {
 		fs := make([]logging.Frame, len(frames))
 		for i, frame := range frames {
-			fs[i] = logutils.ConvertFrame(frame)
+    		log.Printf("Frame %d: %v", i, frame)
 		}
 		s.tracer.ReceivedPacket(packet.hdr, packetSize, fs)
 		for _, frame := range frames {
@@ -1831,8 +1830,9 @@ func (s *session) logPacketContents(p *packetContents) {
 	// tracing
 	if s.tracer != nil {
 		frames := make([]logging.Frame, 0, len(p.frames))
-		for _, f := range p.frames {
-			frames = append(frames, logutils.ConvertFrame(f.Frame))
+		for i, f := range p.frames {
+    		log.Printf("Frame %d: %v", i, f.Frame)
+    		frames = append(frames, f.Frame) // Append without conversion
 		}
 		s.tracer.SentPacket(p.header, p.length, p.ack, frames)
 	}
