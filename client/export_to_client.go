@@ -10,7 +10,7 @@ import (
 	_ "math/big"
 	_ "os"
 
-	"github.com/lucas-clemente/quic-go"
+	"github.com/quic-go/quic-go"
 )
 import "log"
 

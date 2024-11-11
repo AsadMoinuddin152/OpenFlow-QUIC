@@ -4,7 +4,7 @@ import (
 	"io"
 	"log"
 
-	"github.com/lucas-clemente/quic-go/internal/utils"
+	"github.com/quic-go/quic-go/internal/utils"
 
 	"sync"
 	"time"

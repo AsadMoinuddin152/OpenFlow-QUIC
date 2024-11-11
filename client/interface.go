@@ -5,7 +5,7 @@ import (
 	"crypto/tls"
 	"io"
 
-	"github.com/lucas-clemente/quic-go"
+	"github.com/quic-go/quic-go"
 )
 
 // UnixServerI start the unix domain socket server to make a connection with OVS

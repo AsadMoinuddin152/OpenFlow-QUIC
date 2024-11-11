@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/lucas-clemente/quic-go"
+	"github.com/quic-go/quic-go"
 )
 
 type QuicStream struct {

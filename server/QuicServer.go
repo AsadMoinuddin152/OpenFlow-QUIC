@@ -6,7 +6,7 @@ import (
 	"log"
 	"sync"
 
-	"github.com/lucas-clemente/quic-go"
+	"github.com/quic-go/quic-go"
 )
 
 // QuicServer creates the QuicServer instances, it can map a lots of QuicClient

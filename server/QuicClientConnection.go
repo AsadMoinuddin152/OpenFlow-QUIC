@@ -5,7 +5,7 @@ import (
 	"log"
 	"sync"
 
-	"github.com/lucas-clemente/quic-go"
+	"github.com/quic-go/quic-go"
 )
 // QuicServerConnection mixed a lots of useless code due to the earlier EPM under
 // designing. It should be deleted when the EPM design was ripe.

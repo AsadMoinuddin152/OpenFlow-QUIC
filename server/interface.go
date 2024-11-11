@@ -2,7 +2,7 @@ package main
 
 import "C"
 import (
-	"github.com/lucas-clemente/quic-go"
+	"github.com/quic-go/quic-go"
 	"io"
 )
 
