@@ -3,7 +3,7 @@ package quic
 import (
 	"context"
 	"errors"
-	"github.com/quic-go/quic-go/internal/utils"
+	"github.com/quic-go/quic-go/"
 	"io"
 	"net"
 	"time"

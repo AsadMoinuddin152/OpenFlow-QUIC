@@ -4,7 +4,7 @@ import (
 	"net"
 	"os"
 
-	"github.com/quic-go/quic-go/internal/utils"
+	"github.com/quic-go/quic-go/"
 
 	//"reflect"
 	"sync"

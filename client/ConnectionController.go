@@ -6,7 +6,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/quic-go/quic-go/internal/utils"
+	"github.com/quic-go/quic-go/"
 )
 
 // ConnectionController takes charge of the whole QUIC connection and messages processing.
